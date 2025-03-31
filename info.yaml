@@ -1,0 +1,22 @@
+package:
+  name: jivas/deepdoc_retrieval_interact_action
+  author: V75 Inc.
+  architype: DeepdocRetrievalInteractAction
+  version: 0.0.1
+  meta:
+    title: Deepdoc Retrieval Interact Action
+    description: Implements a custom retrieval operations for Deepdoc against the typesense store for retrieval augmented generation tasks
+    group: core
+    type: interact_action
+  config:
+    singleton: true
+    order:
+      weight: 0
+      before: jivas/persona_interact_action
+  dependencies:
+    jivas: ^2.0.0
+    actions:
+      jivas/persona_interact_action: ^0.0.1
+      jivas/typesense_vector_store_action: ^0.0.1
+
+
